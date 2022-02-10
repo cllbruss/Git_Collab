@@ -8,7 +8,9 @@ ui <- fluidPage(
     inputId = "date",
     label = "Select Date:",
     min = min(tourism$Quarter),
-    max = max(tourism$Quarter)
+    max = max(tourism$Quarter),
+    start = min(tourism$Quarter),
+    end = max(tourism$Quarter)
   ),
   plotOutput("reg"),
   verbatimTextOutput("debug")
