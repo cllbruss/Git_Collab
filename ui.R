@@ -6,5 +6,4 @@ ui <- fluidPage(
   ),
 
   plotOutput("reg"),
-  verbatimTextOutput("debug")
 )
