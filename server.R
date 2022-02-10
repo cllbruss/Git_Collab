@@ -5,7 +5,7 @@ server = function(input, output) {
   
   output$reg <- renderPlot({
     
-    plot_df <- tourism[tourism$Region == input$region,]
+    plot_df <- tourism[tourism$Region == input$region & tourism$Purpose == input$purpose,]
     
     autoplot(plot_df)
     
