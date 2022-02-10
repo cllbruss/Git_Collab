@@ -4,6 +4,10 @@ ui <- fluidPage(
     label = "Select Region:",
     choices = unique(tourism$Region),
   ),
-
-  plotOutput("reg"),
+  selectInput(
+    inputId = "purpose",
+    label = "Select Purpose:",
+    choices = unique(tourism$Purpose),
+),
+  plotOutput("reg")
 )
