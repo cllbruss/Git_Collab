@@ -11,5 +11,6 @@ server = function(input, output) {
     reg_plot <- tourism[input$date <= max_date,]
     
     autoplot(reg_plot)
+    
   })
 }
